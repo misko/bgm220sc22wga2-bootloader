@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ASCII"?>
+<device:XMLDevice xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:device="http://www.silabs.com/ss/hwconfig/document/device.ecore" name="BGM220SC22WGA" partId="mcu.arm.efr32.bg22.bgm220sc22wga" contextId="com.silabs.sdk.stack.super:3.1.1._1914541083">
+  <mode name="DefaultMode">
+    <property object="CMU" propertyId="ABPeripheral.included" value="true"/>
+    <property object="DCDC" propertyId="ABPeripheral.included" value="true"/>
+    <property object="DefaultMode" propertyId="mode.diagramLocation" value="100, 100"/>
+    <property object="I2C0" propertyId="I2C.BSP_I2C_SDA.PIN" value="PD02"/>
+    <property object="I2C1" propertyId="ABPeripheral.included" value="true"/>
+    <property object="I2C1" propertyId="I2C.BSP_I2C_SCL.PIN" value="PC03"/>
+    <property object="I2C1" propertyId="I2C.BSP_I2C_SDA.PIN" value="PC02"/>
+    <property object="PORTIO" propertyId="portio.i2c0.location.i2c0_sdaloc" value="50"/>
+    <property object="PORTIO" propertyId="portio.i2c1.enable.scl" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.i2c1.enable.sda" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.i2c1.location.i2c1_sclloc" value="35"/>
+    <property object="PORTIO" propertyId="portio.i2c1.location.i2c1_sdaloc" value="34"/>
+    <property object="PORTIO" propertyId="portio.pti.enable.dframe" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.pti.enable.dout" value="Enabled"/>
+    <property object="PORTIO" propertyId="portio.pti.location.frc_dframeloc" value="37"/>
+    <property object="PORTIO" propertyId="portio.pti.location.frc_doutloc" value="36"/>
+    <property object="PTI" propertyId="ABPeripheral.included" value="true"/>
+    <property object="PTI" propertyId="PTI.BSP_PTI_DFRAME.PIN" value="PC05"/>
+    <property object="PTI" propertyId="PTI.BSP_PTI_DOUT.PIN" value="PC04"/>
+    <property object="USART0" propertyId="USART.HAL_USART_FREQUENCY.INT" value="6400000"/>
+    <property object="USART1" propertyId="USART.HAL_USART_FREQUENCY.INT" value="6400000"/>
+  </mode>
+  <modeTransition>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.source" value="RESET"/>
+    <property object="RESET &#x2192; DefaultMode" propertyId="modeTransition.target" value="DefaultMode"/>
+  </modeTransition>
+</device:XMLDevice>
